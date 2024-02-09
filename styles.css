@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body {
+    
+    /* background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); */
+    background: linear-gradient(to bottom right, #1e1e1e, #333333, #1e1e1e);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-image: linear-gradient(to left , red , orange,blue);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+.stopwatch {
+    background: linear-gradient(to bottom right, #1e1e1e, #333333, #1e1e1e);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    max-width: 400px; /* Set maximum width */
+    margin: 0 auto; /* Center horizontally */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.display {
+    font-size: 3em;
+    color: #fff;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+}
+
+.start-btn,
+.stop-btn,
+.reset-btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1em;
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-btn:hover,
+.stop-btn:hover,
+.reset-btn:hover {
+    background-color: #0D47A1;
+}
+
+.stop-btn {
+    background-color: #F44336;
+}
+
+.reset-btn {
+    background-color: #FF9800;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 600px) {
+    .stopwatch {
+        padding: 10px;
+    }
+
+    .display {
+        font-size: 2em;
+    }
+
+    .controls {
+        flex-wrap: wrap;
+    }
+
+    .start-btn,
+    .stop-btn,
+    .reset-btn {
+        margin: 5px;
+        flex: 0 0 45%; /* Adjust button width for smaller screens */
+    }
+}
